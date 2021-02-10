@@ -1,0 +1,239 @@
+body{
+    font-family: 'Catamaran', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    
+}
+/* Using Float Property
+#HeaderBlock{
+    background-color:white;
+}
+
+.LogoBlock{
+    background-color: green;
+    width: 50%;
+    float: left;
+    
+}
+
+.SearchBlock{
+    background-color: red;
+    width: 50%;
+    float: left;
+}
+
+.LogoBlock .Logo{
+    background-color: yellow;
+    width: 25%;
+    float: left;
+}
+
+.LogoBlock .MenuLeft{
+    background-color: indigo;
+    width: 75%;
+    float: left;
+}
+
+
+.SearchBlock .Search{
+    background-color: violet;
+    width: 75%;
+    float: left;
+}
+
+.SearchBlock .MenuRight{
+    background-color: tomato;
+    width: 25%;
+    float: left;
+}*/
+
+/* Using Float Property */
+
+  #HeaderBlock .container {
+     background-color:white ;
+      display: flex;
+      height: 90px;
+      justify-content: center;
+     align-items: center;
+     padding: 0 5%;
+     box-shadow: 1px 1px 7px lightpink;
+    
+  }
+
+
+
+.LogoBlock {
+/*background-color: slateblue;*/
+display: flex;
+height: 50px;
+width: 50%;
+}
+
+.SearchBlock{
+  /*  background-color: salmon;*/
+    display: flex;
+    height: 50px;
+    width: 50%;
+}
+
+
+.Logo{
+
+    width: 15%;
+}
+
+
+.MenuLeft{
+    width: 85%;
+}
+
+.Search{
+    width: 75%;
+    display: flex;
+    align-items: center;
+}
+
+.MenuRight{
+    width: 25%;
+}
+/*Resize Logo*/
+.Logo img{
+    height: 45px;
+    width: 55px;
+
+}
+
+/*For Bullet Remove*/
+/*Both right and left ul doing same operation that why , operator*/
+.LeftUl , .RightUl {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    /*Make list Inline*/
+    display: flex;
+
+    /*Make center all list*/
+    height: 70px;
+    align-items: center;
+    justify-content:flex-start;
+}
+
+/*Remove anchor tag default highlighted things*/
+/*Both right and left ul doing same operation that why , operator*/
+.LeftUl li a , .RightUl li a{
+
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+
+    /*Make Space between all list elements*/
+    padding: 15px;
+}
+
+
+.Search input{
+    padding: 12px 50px;
+    border-radius: 4px;
+    background-color: #e5e5e5;
+    border: none;
+    width: 95%;
+
+}
+
+.iconParent{
+    position: relative;
+    padding: 0px;
+   
+}
+
+.fa-search{
+    color: #444;
+    position: absolute;
+    top: -7px;
+    left: 19px;
+}
+
+.RightUl li a{
+    display: flex;
+    text-align: center;
+    line-height: 0px;
+    flex-direction: column;
+}
+
+.RightUl li span{
+
+    padding: 15px 22px;
+}
+
+.LeftUl li a:hover{
+    border-bottom:3px solid yellowgreen;
+}
+
+/*SLIDER BLOCK */
+
+#SliderBlock .Sliderimg1{
+    width: 100%;
+    height: 400px;
+}
+
+#SliderBlock  article{
+
+    margin-top: 20px;
+    margin-top: 20px;
+}
+/*Heading Block*/
+
+#heading {
+    background-color: white;
+    text-transform: uppercase;
+    color: #3e4152;
+    letter-spacing: .15em;
+    font-size: 1.5em;
+    margin: 50px 0 10px 30px;
+    text-align: justify;
+    font-weight: 500;
+    font-weight: bold;
+    height: 80px;
+}
+/*Store Block*/
+
+#StoreBlock  {
+    background-color:white ;
+    
+}
+
+#StoreBlock article {
+
+    width: 94%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 425px;
+    
+    
+    
+}
+
+.Stores{
+    height: 425px;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#StoreBlock img{
+   height: 400px;
+  
+   width: 100%;
+}
+
+
+
